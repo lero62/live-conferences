@@ -51,7 +51,7 @@ ogUrl: https://reactsummit.com
 		{% endif %}
 
 		{% if pages[pageKey].pageSections.MCs %}
-			{% include "partials/_MCs.html" %}
+			{% include "partials/_mcs.html" %}
 		{% endif %}
 
 		{% if pages[pageKey].pageSections.schedule %}
@@ -76,14 +76,14 @@ ogUrl: https://reactsummit.com
 			{% include "partials/_full-ticket.html" %}
 		{% endif %}
 
-		{% if customContent.videoRooms and pages[pageKey].pageSections.videoRooms %}
-			{% include "partials/_video-rooms.html" %}
-		{% endif %}
-
 		{% if pages[pageKey].pageSections.freeTicket %}
 			{% include "partials/_free-ticket.html" %}
 		{% endif %}
 
+
+		{% if customContent.videoRooms and pages[pageKey].pageSections.videoRooms %}
+			{% include "partials/_video-rooms.html" %}
+		{% endif %}
 		{% if pages[pageKey].pageSections.contact %}
 			{% include "partials/_contact-formV2.html" %}
 		{% endif %}
